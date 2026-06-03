@@ -3,7 +3,7 @@ import {lazyReportBatch} from '../report'
 export default function pageChange() {
     let oldRouter=''
     window.addEventListener('hashchange',(event)=>{ //监听hash变化
-        const newRouter = event.newURL,
+        const newRouter = event.newURL
         const reportData={
             uuid:generateUniqueId(),
             type:'behavior',

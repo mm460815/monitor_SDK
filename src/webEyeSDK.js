@@ -1,8 +1,8 @@
 import {setConfig} from './config';
-import lazyReportBatch from './report';
-import error from './error';
-import behavior from './behavior';
-import performance from './performance';
+import {lazyReportBatch} from './report';
+import error from './error/index';
+import behavior from './behavior/index';
+import performance from './performance/index';
 window._webEyeSDK = {version: '1.0.0'};
 export function install(Vue,options) {
   if(_webEyeSDK_.vue) return;

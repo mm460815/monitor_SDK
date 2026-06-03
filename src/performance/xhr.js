@@ -12,7 +12,7 @@ export function overrideOpenAndSend(){
        this.startTime = Date.now();
        const onLoaded=()=>{
            this.endTime = Date.now();
-           const {url, method, startTime, endTime, duration,status}=this,
+           const {url, method, startTime, endTime, duration,status}=this;
             const reportData = {
                 status,
                 duration,

@@ -1,4 +1,4 @@
-import config from './config'
+import {config} from './config'
 import {generateUniqueId} from './utils'
 import {getCache,addCache,clearCache} from './cache'
 export const originalOpen = XMLHttpRequest.prototype.open;

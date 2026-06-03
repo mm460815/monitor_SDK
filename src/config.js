@@ -6,6 +6,10 @@ export const config = {
     isImageUpload: false,
     batchSize: 100,
 }
-export const setConfig = (config) => {
-    Object.assign(this.config, config)
+export  function setConfig(config){
+    for (const key in config) {
+        if (options[key]) {
+            config[key] = options[key];
+        }
+    }
 }
