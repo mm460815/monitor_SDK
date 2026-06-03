@@ -1,10 +1,28 @@
 {
-  "name": "webeyesdk",
+  "name": "monitor-webeyesdk",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/monitor.js",
+   "files": ["dist","REDME.md","bin"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup/build.js"
+  },
+  "bin":{
+    "monitor-sdk": "bin/index.js"
+  },
+  "keywords": ["sdk","monitor","前端监控"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm460815/monitor_SDK.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mm460815/monitor_SDK.git/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5"
   },
   "author": "",
   "license": "ISC",
