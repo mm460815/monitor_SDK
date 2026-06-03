@@ -1,5 +1,5 @@
 {
-  "name": "monitor-webeyesdk",
+  "name": "@moira-g/monitor-websdk",
   "version": "1.0.0",
   "main": "dist/monitor.js",
    "files": ["dist","REDME.md","bin"],
@@ -26,6 +26,9 @@
   },
   "author": "",
   "license": "ISC",
+   "publishConfig": {
+    "access": "public"
+  },
   "description": "",
   "dependencies": {
     "@babel/preset-env": "^7.29.7",
@@ -37,3 +40,4 @@
     "rollup": "^4.60.4"
   }
 }
+ 
