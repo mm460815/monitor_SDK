@@ -1,7 +1,7 @@
 {
   "name": "@moira-g/monitor-websdk",
   "version": "1.0.0",
-  "main": "dist/monitor.js",
+  "main": "dist/monitor.cjs.js",
    "files": ["dist","REDME.md","bin"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
