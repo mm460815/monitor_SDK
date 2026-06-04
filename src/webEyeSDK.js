@@ -3,10 +3,10 @@ import {lazyReportBatch} from './report';
 import error from './error/index';
 import behavior from './behavior/index';
 import performance from './performance/index';
-window._webEyeSDK = {version: '1.0.0'};
+window._webEyeSDK = {version: '1.0.1'};
 export function install(Vue,options) {
-  if(_webEyeSDK_.vue) return;
-  _webEyeSDK_.vue = true;
+  if(window._webEyeSDK.vue) return;
+  window._webEyeSDK.vue = true;
   setConfig(options);
   const handler=Vue.config.errorHandler;
   Vue.config.errorHandler = function (err, vm, info) {
@@ -26,8 +26,8 @@ export function install(Vue,options) {
   }
 }
 export function errorBoundary(err,info){
-    if(_webEyeSDK_.vue) return;
-    _webEyeSDK_.vue = true;
+    if(window._webEyeSDK.vue) return;
+    window._webEyeSDK.vue = true;
     const reportData = {
       error: err,
       info: info,
