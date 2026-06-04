@@ -6,7 +6,7 @@ export const config = {
     isImageUpload: false,
     batchSize: 100,
 }
-export  function setConfig(config){
+export  function setConfig(options){
     for (const key in config) {
         if (options[key]) {
             config[key] = options[key];
