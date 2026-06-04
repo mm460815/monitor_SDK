@@ -14,7 +14,7 @@ export default function onClick() {
                     outerHtml: target.outerHTML,
                     with: target.offsetWidth,
                     height: target.offsetHeight,
-                    eventType,
+                    // eventType,
                     path: e.path,
                 }
                 lazyReportBatch(reportData)

@@ -1,7 +1,9 @@
 {
   "name": "@moira-g/monitor-websdk",
   "version": "1.0.3",
-  "main": "dist/monitor.cjs.js",
+  // "main": "src/webEyeSDK.js", //本地调试
+  "main": "dist/monitor.cjs.js.js", //打包后
+  "homepage": "https://github.com/mm460815/monitor_SDK.git",
   "files": [
     "dist",
     "REDME.md",

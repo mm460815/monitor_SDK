@@ -20,7 +20,7 @@ export default function error(){
     },true)
     //js运行错误
     window.onerror = function(msg,url,lineNo,columnNo,error){
-        console.log('js运行错误',msg,url,line,col,error)
+        console.log('js运行错误',msg,url,lineNo,columnNo,error)
         const reportData={
             type:'error',
             subType:'js',

@@ -1,6 +1,6 @@
 import { lazyReportBatch } from '../report';
 export default function observerLoad() {
-    windown.addEventListener('pageShow', (event) => {
+    window.addEventListener('pageShow', (event) => {
         requsestAnimationFrame(() => {
           ['load'].forEach((type) => {
             const reportData = {

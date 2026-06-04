@@ -8,6 +8,7 @@ export function install(Vue,options) {
   if(window._webEyeSDK.vue) return;
   window._webEyeSDK.vue = true;
   setConfig(options);
+ 
   const handler=Vue.config.errorHandler;
   Vue.config.errorHandler = function (err, vm, info) {
     
@@ -24,6 +25,7 @@ export function install(Vue,options) {
     lazyReportBatch(reportData);
     handler && handler.call(this, err, vm, info);
   }
+  init();
 }
 export function errorBoundary(err,info){
     if(window._webEyeSDK.vue) return;
@@ -38,9 +40,13 @@ export function errorBoundary(err,info){
       pageUrl:window.location.href,
     }
     lazyReportBatch(reportData);
+    init();
 }
 export function init(options) {
   setConfig(options);
+  error();
+  behavior();
+  performance();
 }
 export default {
   install,

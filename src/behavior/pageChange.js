@@ -27,6 +27,7 @@ export default function pageChange() {
             to:to,
             startTime:performance.now()
         }
+        console.log(reportData)
         lazyReportBatch(reportData)
         from=to
     },true)

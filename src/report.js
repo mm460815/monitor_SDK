@@ -35,6 +35,7 @@ export function report(data) {
 
 }
 export const lazyReportBatch = (data) => {
+    console.log(data,'report')
     addCache(data)
     const dataCache=getCache()
     if (dataCache.length&&dataCache.length >= config.batchSize) {

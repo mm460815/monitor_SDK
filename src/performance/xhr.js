@@ -24,7 +24,7 @@ export function overrideOpenAndSend(){
                 success: status >= 200 && status < 300,
                 subType: 'xhr'
             };
-           lazyReportBatch(data);
+           lazyReportBatch(reportData);
            this.removeEventListener('loadend', onLoaded,true);
        }
        this.addEventListener('loadend', onLoaded,true);
@@ -32,5 +32,5 @@ export function overrideOpenAndSend(){
     };
 };
 export default function xhr() {
-    overwriteOpenAndSend();
+    overrideOpenAndSend();
 }
