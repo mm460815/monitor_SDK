@@ -1,6 +1,6 @@
 {
   "name": "@moira-g/monitor-websdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/monitor.cjs.js",
   "files": [
     "dist",
